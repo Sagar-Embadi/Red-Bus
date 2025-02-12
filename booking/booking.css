@@ -1,0 +1,309 @@
+*{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.topMainContainer {
+    align-items: center;
+    padding: 20px ;
+    display: flex;
+    gap: 100px;
+    justify-content:center;
+}
+.seatcontainer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.seatcontainer > h2{
+    padding: 20px;
+}
+.bus_layout{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 20px 20px 0 20px;
+    width: 250px;
+    /* transform: rotate(-90deg); */
+}
+.driver{
+    align-self:flex-end;   
+}
+#bus_seats {
+    border-top: 0.5px solid grey;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(5, 50px);/* 2 seats + aisle + 2 seats */
+    row-gap: 5px;
+    justify-content: center;
+}
+.seat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #fff;
+    transition: 0.3s;
+}
+.seat:hover {
+    background-color: #bae5f9;
+}
+.seat.selected {
+    background-color: #28a745;
+    color: #fff;
+    border-color: #28a745;
+}
+.seat.unavailable {
+    background-color: #6c757d;
+    color: #fff;
+    cursor: not-allowed;
+}
+.aisle {
+    width: 20px;
+}
+.legend {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.legend span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.legend .box {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+.legend .available {
+    background-color: #fff;
+    border: 2px solid #ccc;
+}
+.legend .selected {
+    background-color: #28a745;
+    border: 2px solid #28a745;
+}
+.legend .unavailable {
+    background-color: #6c757d;
+    border: 2px solid #6c757d;
+}
+#priceCard{
+    width: 400px;
+    height: 350px;
+    padding: 20px;
+    box-shadow: 2px 2px 2px grey,-2px -2px 2px grey,-2px 2px 2px grey,2px -2px 2px grey;
+}
+#priceCard h3{
+    padding: 15px 0px;
+}
+.pickup_drop{
+    display: flex;
+    gap: 20px;
+    padding: 20px 15px;
+}
+.routeDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color:black;
+    font-weight: bold;
+}
+.routeDiv .pickup{
+    display: flex;
+    gap: 50px;
+}
+/* .routeDiv .pickup #pickup{
+    color:black;
+    font-weight: bold;
+}
+.routeDiv .pickup #arrival_time{
+    color:black;
+    font-weight: bold;
+} */
+.routeDiv .drop{
+    display: flex;
+    gap: 70px;
+}
+/* .routeDiv .drop #drop{
+    color:black;
+    font-weight: bold;
+}
+.routeDiv .drop #departure_time{
+    color:black;
+    font-weight: bold;
+} */
+.seatNumbers{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    color:black;
+    font-weight: bold;
+}
+.amounting{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px 10px 20px;
+    color:black;
+    font-weight: bold;
+}
+#bookingBtn{
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: crimson;
+    color: white;
+}
+#slide{
+    display: none;
+    width: 50%;
+    height: 100%;
+    /* min-height: 100% ; */
+    position: absolute;
+    right: 0%;
+    top: 0px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border: none;
+}
+#slide > h2{
+    text-align: center;
+    padding-bottom: 20px;
+}
+#closing{
+    cursor: pointer;
+}
+/* PASSENGER DETAILS */
+#passengerInfoCards{
+    height: 280px;
+    overflow: hidden scroll;
+    scrollbar-width: none;
+    margin-bottom: 10px;
+}
+.cards > .passengerNo_seatNo{
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+}
+.nameDiv{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.nameDiv > input{
+    width: 96%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.gender_age{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.gender_age > .gender, .gender_age > .age{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.gender > div> label{
+    padding: 5px;
+}
+.gender_age > .age > input{
+    padding: 5px;
+    
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+/* CONTACT DETAILS */
+.contactDetails, .cards{
+    width: 100%;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.info {
+    background-color: #fff3cd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #856404;
+    width: 96%;
+}
+.contactDetails label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin: 5px 0;
+}
+.contactDetails input, select {
+    width: 96%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.phone-group {
+    display: flex;
+    width: 100%;
+}
+.phone-group select {
+    width: 20%;
+    margin-right: 5px;
+}
+.phone-group input {
+    width: 80%;
+}
+#submit{
+    width: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: crimson;
+    color: white;
+    border: none;
+}
+@media (max-width:450px){
+    .topMainContainer{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .legend{
+        flex-direction: row;
+    }
+    #priceCard{
+        width: 75vw;
+    }
+    #slide{
+        width: 90%;
+        height: auto;
+    }
+    
+}
+@media (min-width:451px) and (max-width:770px) {
+    .topMainContainer{
+        gap: 40px;
+    }
+    .legend{
+        flex-direction: row;
+    }
+    #slide{
+        width: 50%;
+        height: auto;
+    }
+}
