@@ -17,41 +17,10 @@ A web-based clone of the popular Red Bus platform, featuring real-time bus booki
 ---
 
 ## 🛠️ Technologies Used  
-- **Frontend**: HTML, CSS, JavaScript  
-- **Backend**: Node.js (for serving custom API)  
+- **Frontend**: HTML, CSS, JavaScript   
 - **Database**: Custom API for bus data  
 - **Authentication**: Firebase Authentication  
 - **Hosting**: Firebase Hosting (or your preferred hosting platform)  
-
----
-
-## 🚀 Getting Started  
-
-### Prerequisites  
-Make sure you have the following installed on your system:  
-- Node.js  
-- Firebase CLI  
-
-### Installation  
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/yourusername/red-bus-clone.git
-   cd red-bus-clone
-   ```  
-
-2. Install dependencies:  
-   ```bash
-   npm install
-   ```  
-
-3. Configure Firebase:  
-   - Set up a Firebase project and enable Authentication.  
-   - Add your Firebase configuration in `firebaseConfig.js`.  
-
-4. Run the project:  
-   ```bash
-   npm start
-   ```  
 
 ---
 
