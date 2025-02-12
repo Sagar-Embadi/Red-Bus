@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="https://kit.fontawesome.com/ea713ed858.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div id="left_header">
+            <a href="./home.html"><img src="https://s3.rdbuz.com/Images/rdc/rdc-redbus-logo.svg" alt="Red Bus Logo"></a>
+            <div id="space">&ensp;&ensp;&ensp;</div>
+            <div class="redTickets" id="busTickets">
+                <img id="busLogo" src="https://s3.rdbuz.com/Images/rdc/rdc-redbus-logo.svg" alt="Red bus Tickets">
+                <p>Bus Tickets</p>
+            </div>
+            <div class="redTickets" id="trainTickets">
+                <img id="trainLogo" src="https://s3.rdbuz.com/web/images/layout/rail_vertical.svg" alt="Red Rail Tickets">
+                <p>Train Tickets</p>
+            </div>
+        </div>
+        <div id="right_header">
+            <p><i class="fa-solid fa-headset"></i> Help</p>
+            <p><i class="fa-solid fa-language"></i> English</p>
+            <p><i class="fa-regular fa-circle-user"></i> Account</p>
+        </div>
+    </header>
+    <main id="busData"> 
+    <section id="routing">
+        <h1>India's No. 1 Online Bus Ticket Booking Site</h1>
+        <form id="route_selection">
+        <div id="route_selection_outer_div">
+            <div for="from" id="route_selection_inner_div1">
+                <div><label for="from"><i class="fa-solid fa-bus"></i></label></div>
+                <div>
+                    <input type="text" id="from" placeholder="FROM">
+                </div>
+            </div>
+            <div id="route_selection_inner_div2">
+                <div><label for="to"><i class="fa-solid fa-bus"></i></label></div>
+                <div>
+                    
+                    <input type="text" id="to" placeholder="TO">
+                </div>
+            </div>
+            <div id="route_selection_inner_div3">
+                <div><label for="date"><i class="fa-regular fa-calendar-days"></i></label></div>
+                <div>
+                    <input type="date" id="date" >
+                </div>
+            </div>
+            <button >SEARCH BUSES</button>
+        </div>
+    </form>
+    </section>
+    <section class="from_to">
+    <h4>NOW BUSES ARE LIMITED AVAILABLE ONLY FOR THIS ROUTES <i class="fa-solid fa-arrow-down"></i></h4>
+    <div id="buses_info"></div>
+    </section>
+    <section id="offers_section">
+        <div id="offers_div">
+            <h4>TRENDING OFFERS</h4>
+            <div id="scrollbar">
+                <div class="cards card1">
+                    <img src="https://st.redbus.in/images/FIRST/first_26th_sep_2022_ravi/tile-80X80.png" alt="IMAGE">
+                    <div class="card_content">
+                        <span>BUS</span>
+                        <h5>Save up to Rs 250 on bus tickets</h5>
+                        <p>Valid till 25 Apr</p>
+                        <h6>FIRST</h6>
+                    </div>
+                </div>
+                <div class="cards card2">
+                    <img src="https://st.redbus.in/Images/INDOFFER/SUPERHIT/80x80.png" alt="IMAGE">
+                    <div class="card_content">
+                        <span>BUS</span>
+                        <h5>Save up to Rs 300 on AP, TS routes</h5>
+                        <p>Valid till 25 Apr</p>
+                        <h6>SUPERHIT</h6>
+                    </div>
+                </div>
+                <div class="cards card3">
+                    <img src="https://st.redbus.in/Images/APSRTC/new/APSRTC_3.png" alt="IMAGE">
+                    <div class="card_content">
+                        <span>BUS</span>
+                        <h5>Save up to Rs 250 on APSRTC bus tickets</h5>
+                        <p>Valid till 25 Apr</p>
+                        <h6>APSRTCNEW</h6>
+                    </div>
+                </div>
+                <div class="cards card4">
+                    <img src="https://st.redbus.in/Images/INDOFFER/CHARTERED15/80x80.png" alt="IMAGE">
+                    <div class="card_content">
+                        <span>BUS</span>
+                        <h5>Save up to Rs 300 on Chartered Bus</h5>
+                        <p>Valid till 25 Apr</p>
+                        <h6>CHARTERED15</h6>
+                    </div>
+                </div>
+                <div class="cards card5">
+                    <img src="https://st.redbus.in/Images/INDOFFER/80x80/SBSTC.png" alt="IMAGE">
+                    <div class="card_content">
+                        <span>BUS</span>
+                        <h5>Save 25% up to Rs 100 on SBSTC Bus</h5>
+                        <p>Valid till 25 Apr</p>
+                        <h6>SBNEW</h6>
+                    </div>
+                </div>
+                <div class="cards card6">
+                    <img src="https://st.redbus.in/Images/INDOFFER/80X80/BUS300.png" alt="IMAGE">
+                    <div class="card_content">
+                        <span>BUS</span>
+                        <h5>Save up to Rs 50 on bus tickets</h5>
+                        <p>Valid till 25 Apr</p>
+                        <h6>YOLORED</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="redTrain">
+        <div class="redTrainDiv">
+            <div class="divContent">
+                <h1>NOW, <strong>GET MORE THAN JUST BUS</strong> TICKETS WITH REDBUS!</h1>
+                <span id="redRail">
+                    <img src="https://s3.rdbuz.com/web/images/layout/rail_vertical.svg" alt="redRail">
+                    <span>Train Tickets</span>
+                </span>
+                <p>Book IRCTC Train Tickets on redRail simple & superfast booking process with no service fee + no payment gateway charge.</p>
+                <span>Authorised IRCTC Partner</span>
+                <span>Instant refunds on UPI payments</span>
+                <span>Hassle- free customer support</span>
+            </div>
+            <img src="https://s3.rdbuz.com/web/images/homeV2/AboutUs/railPop.webp" alt="RED TRAIN">
+        </div>
+    </section>
+    <section id="promoBuses">
+        <div class="promo">
+            <div class="promoImg">
+                <img src="https://s3.rdbuz.com/images/webplatform/india/primoHomeBannerComp.webp" alt="Raising Star Buses">
+            </div>
+            <div class="promo_content">
+                <div class="features">
+                    <i class="fa-solid fa-stopwatch"></i>
+                    <div>
+                        <h3>On Time</h3>
+                        <p>Punctual arrivals on 95% trips</p>
+                    </div>
+                </div>
+                <div class="features">
+                    <i class="fa-solid fa-hands-praying"></i>
+                    <div>
+                        <h3>Friendly Staff</h3>
+                        <p>Always ready to help</p>
+                    </div>
+                </div>
+                <div class="features">
+                    <i class="fa-regular fa-star"></i>
+                    <div>
+                        <h3>Top Rated</h3>
+                        <p>Buses with 4+ star rating</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <main id="trainData" style="text-align: center;">
+        <section id="TrainContent">
+            <h2>This feature is under maintenance </h2>
+        <h1>Soon we introduce train tickets</h1>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script type="module" src="home.js"></script>
+</body>
+</html>
